@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Weback Example</title>
+    <script src="/public/main.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Very specific calculator</h1>
+
+      <form id="form-area" class="layout">
+        <div class="form-controls">
+          <p>Enter a value x and you&rsquo;ll get back 2x<sup>2</sup></p>
+          <div class="form-field">
+            <label for="x">Value of x</label>
+            <input id="x" />
+          </div>
+          <button id="calculateButton" type="button">Get result</button>
+        </div>
+        <div role="region" id="result" aria-live="polite">
+          <h2>Result</h2>
+          <p id="result">No result yet</p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
