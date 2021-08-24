@@ -2,19 +2,24 @@
   "name": "example-webpack-basic",
   "version": "1.0.0",
   "description": "A basic Webpack project example",
+  "author": "Craig Morrison <hello@craigmorrison.co.uk>",
+  "license": "MIT",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craigmorrison/example-webpack-basic"
+  },
   "scripts": {
     "start": "serve",
     "build": "webpack -c webpack.build.js",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "npm run build"
   },
   "prettier": {
     "singleQuote": true,
     "trailingComma": "none",
     "quoteProps": "as-needed"
   },
-  "author": "Craig Morrison <hello@craigmorrison.co.uk>",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
