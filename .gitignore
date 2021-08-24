@@ -13,3 +13,6 @@ coverage
 
 # Build directory
 public
+
+# Webpack
+compilation-stats.json
